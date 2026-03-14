@@ -7,7 +7,6 @@
 #include <iostream>
 using namespace std;
 
-
 /* ================= HELPERS ================= */
 
 static bool isNumber(const std::string& s) {
@@ -80,7 +79,6 @@ void Optimizer::loadProfile(const std::string& file) {
     for (auto &p : hot)
         std::cout << p.first << " " << p.second << std::endl;
 }
-
 
 /* ================= HOT PATH OPT ================= */
 

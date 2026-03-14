@@ -561,6 +561,30 @@ src/runtime/profiler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/src/runtime/profiler.cpp.s
 .PHONY : src/runtime/profiler.cpp.s
 
+src/utils/config.o: src/utils/config.cpp.o
+.PHONY : src/utils/config.o
+
+# target to build an object file
+src/utils/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/src/utils/config.cpp.o
+.PHONY : src/utils/config.cpp.o
+
+src/utils/config.i: src/utils/config.cpp.i
+.PHONY : src/utils/config.i
+
+# target to preprocess a source file
+src/utils/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/src/utils/config.cpp.i
+.PHONY : src/utils/config.cpp.i
+
+src/utils/config.s: src/utils/config.cpp.s
+.PHONY : src/utils/config.s
+
+# target to generate assembly for a file
+src/utils/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compiler.dir/build.make CMakeFiles/compiler.dir/src/utils/config.cpp.s
+.PHONY : src/utils/config.cpp.s
+
 src/utils/logger.o: src/utils/logger.cpp.o
 .PHONY : src/utils/logger.o
 
@@ -648,6 +672,9 @@ help:
 	@echo "... src/runtime/profiler.o"
 	@echo "... src/runtime/profiler.i"
 	@echo "... src/runtime/profiler.s"
+	@echo "... src/utils/config.o"
+	@echo "... src/utils/config.i"
+	@echo "... src/utils/config.s"
 	@echo "... src/utils/logger.o"
 	@echo "... src/utils/logger.i"
 	@echo "... src/utils/logger.s"

@@ -22,14 +22,9 @@ void CodeGen::emitC(const std::vector<IRInstr>& ir, const std::string& outFile) 
             out << "prof_hit(\"" << i.res << "\");\n";
             out << "goto " << i.res << ";\n";
         }
-
-
-
-
         else if (i.op == "ifgoto") {
             out << "if (" << i.a1 << " == 0) goto " << i.res << ";\n";
         }
-
 
         else if (i.op == "assign") {
             if (!declared.count(i.res)) {
@@ -43,8 +38,7 @@ void CodeGen::emitC(const std::vector<IRInstr>& ir, const std::string& outFile) 
         else if (i.op == "print") {
             out << "printf(\"%d\\n\", " << i.a1 << ");\n";
         }
-
-        else { // binary op
+        else { // Looks like a standard binary operation (math or comparison)!
             if (!declared.count(i.res)) {
                 out << "int " << i.res << " = " << i.a1 << " " << i.op << " " << i.a2 << ";\n";
                 declared.insert(i.res);
@@ -54,11 +48,8 @@ void CodeGen::emitC(const std::vector<IRInstr>& ir, const std::string& outFile) 
         }
     }
 
-
-
     out << "prof_dump();\nreturn 0;\n}\n";
     out.close();
     std::cout << "Generated C code in " << outFile << std::endl;
 }
-
 

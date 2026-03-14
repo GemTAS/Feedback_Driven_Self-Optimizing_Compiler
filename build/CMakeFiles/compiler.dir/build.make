@@ -307,10 +307,24 @@ CMakeFiles/compiler.dir/src/runtime/profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/src/runtime/profiler.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/runtime/profiler.cpp -o CMakeFiles/compiler.dir/src/runtime/profiler.cpp.s
 
+CMakeFiles/compiler.dir/src/utils/config.cpp.o: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/utils/config.cpp.o: /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/config.cpp
+CMakeFiles/compiler.dir/src/utils/config.cpp.o: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/compiler.dir/src/utils/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/utils/config.cpp.o -MF CMakeFiles/compiler.dir/src/utils/config.cpp.o.d -o CMakeFiles/compiler.dir/src/utils/config.cpp.o -c /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/config.cpp
+
+CMakeFiles/compiler.dir/src/utils/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/compiler.dir/src/utils/config.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/config.cpp > CMakeFiles/compiler.dir/src/utils/config.cpp.i
+
+CMakeFiles/compiler.dir/src/utils/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/src/utils/config.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/config.cpp -o CMakeFiles/compiler.dir/src/utils/config.cpp.s
+
 CMakeFiles/compiler.dir/src/utils/logger.cpp.o: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/utils/logger.cpp.o: /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/logger.cpp
 CMakeFiles/compiler.dir/src/utils/logger.cpp.o: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/compiler.dir/src/utils/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/compiler.dir/src/utils/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/utils/logger.cpp.o -MF CMakeFiles/compiler.dir/src/utils/logger.cpp.o.d -o CMakeFiles/compiler.dir/src/utils/logger.cpp.o -c /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/utils/logger.cpp
 
 CMakeFiles/compiler.dir/src/utils/logger.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/compiler.dir/src/utils/logger.cpp.s: cmake_force
 CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o: /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/backend/profiler_runtime.c
 CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o -MF CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o.d -o CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o -c /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/src/backend/profiler_runtime.c
 
 CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.i: cmake_force
@@ -354,6 +368,7 @@ compiler_OBJECTS = \
 "CMakeFiles/compiler.dir/src/optimizer/loop_unrolling.cpp.o" \
 "CMakeFiles/compiler.dir/src/optimizer/pass_manager.cpp.o" \
 "CMakeFiles/compiler.dir/src/runtime/profiler.cpp.o" \
+"CMakeFiles/compiler.dir/src/utils/config.cpp.o" \
 "CMakeFiles/compiler.dir/src/utils/logger.cpp.o" \
 "CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o"
 
@@ -377,11 +392,12 @@ compiler: CMakeFiles/compiler.dir/src/optimizer/feedback_engine.cpp.o
 compiler: CMakeFiles/compiler.dir/src/optimizer/loop_unrolling.cpp.o
 compiler: CMakeFiles/compiler.dir/src/optimizer/pass_manager.cpp.o
 compiler: CMakeFiles/compiler.dir/src/runtime/profiler.cpp.o
+compiler: CMakeFiles/compiler.dir/src/utils/config.cpp.o
 compiler: CMakeFiles/compiler.dir/src/utils/logger.cpp.o
 compiler: CMakeFiles/compiler.dir/src/backend/profiler_runtime.c.o
 compiler: CMakeFiles/compiler.dir/build.make
 compiler: CMakeFiles/compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable compiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable compiler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/compiler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

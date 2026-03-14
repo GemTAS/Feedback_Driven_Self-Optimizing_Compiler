@@ -54,4 +54,3 @@ struct IfGotoStmt : Stmt {
     std::string lhs, op, rhs, label;
 };
 
-

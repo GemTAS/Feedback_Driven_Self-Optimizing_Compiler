@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/compiler.dir/src/optimizer/pass_manager.cpp.o.d"
   "CMakeFiles/compiler.dir/src/runtime/profiler.cpp.o"
   "CMakeFiles/compiler.dir/src/runtime/profiler.cpp.o.d"
+  "CMakeFiles/compiler.dir/src/utils/config.cpp.o"
+  "CMakeFiles/compiler.dir/src/utils/config.cpp.o.d"
   "CMakeFiles/compiler.dir/src/utils/logger.cpp.o"
   "CMakeFiles/compiler.dir/src/utils/logger.cpp.o.d"
   "compiler"

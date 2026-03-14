@@ -84,8 +84,6 @@ Expr* Parser::parseExpr() {
     return left;
 }
 
-
-
 Expr* Parser::parseTerm() {
     Expr* left = parseFactor();
 
@@ -97,7 +95,6 @@ Expr* Parser::parseTerm() {
 
     return left;
 }
-
 
 Expr* Parser::parseFactor() {
     if (peek().type == TokenType::NUMBER)

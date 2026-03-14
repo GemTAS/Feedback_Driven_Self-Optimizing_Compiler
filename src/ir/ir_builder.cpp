@@ -58,7 +58,6 @@ void IRBuilder::genStmt(Stmt* s, std::vector<IRInstr>& ir) {
     }
 }
 
-
 std::string IRBuilder::genExpr(Expr* e, std::vector<IRInstr>& ir) {
 
     if (auto n = dynamic_cast<NumberExpr*>(e))

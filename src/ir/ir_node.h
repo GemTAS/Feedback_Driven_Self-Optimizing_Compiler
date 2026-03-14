@@ -9,4 +9,3 @@ struct IRInstr {
     std::string label;   // NEW — jump target for branch/goto
 };
 
-

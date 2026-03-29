@@ -12,7 +12,8 @@
 #include "optimizer/pass_manager.h"
 
 int main(int argc, char* argv[]) {
-    // Let's make sure the user provided at least a test file to compile.    if (argc < 2) {
+    // Let's make sure the user provided at least a test file to compile.
+    if (argc < 2) {
         std::cout << "Usage: ./compiler <file> [profile.txt] [-v]\n";
         return 1;
     }
@@ -28,7 +29,7 @@ int main(int argc, char* argv[]) {
         if (arg3 == "-v") Config::currentLogLevel = Config::LogLevel::DEBUG;
     }
 
-    }
+
 
     // Alright, time to read the source file into memory.
     std::ifstream file(argv[1]);
@@ -36,12 +37,12 @@ int main(int argc, char* argv[]) {
         Logger::error(std::string("Failed to open file: ") + argv[1]);
         return 1;
     }
-    }
+
 
     // We'll use a stringstream buffer to slurp the whole file.
     std::stringstream buffer;
     buffer << file.rdbuf();
-    buffer << file.rdbuf();
+
 
     // Got it, now we have the source string.
     std::string source = buffer.str();

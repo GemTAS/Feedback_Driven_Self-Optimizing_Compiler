@@ -2,13 +2,13 @@
 
 A custom compiler that uses runtime profiling to identify frequently executed code paths and applies optimizations such as constant folding and loop optimizations to improve performance.
 
-===> (1.)Project Setup
+===> (1.)Project Setup : 
 
   -> Required build tools installed:
     sudo apt update
     sudo apt install build-essential cmake
 
-===> (2.)Build Instructions
+===> (2.)Build Instructions : 
 (not needed since i have pushed build folder as well for now)
   cd ~/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler
   mkdir -p build
@@ -16,7 +16,7 @@ A custom compiler that uses runtime profiling to identify frequently executed co
   cmake ..
   make
 
-===> (3.)Running the Compiler
+===> (3.)Running the Compiler : 
   -> Run the compiler on sample test programs:
     ./compiler ../tests/sample1.lang
     ./compiler ../tests/sample2.lang
@@ -26,7 +26,7 @@ A custom compiler that uses runtime profiling to identify frequently executed co
     Apply optimizations
     Produce output.c
 
-===> (4.)Compile and Execute Generated Code
+===> (4.)Compile and Execute Generated Code : 
 
   1.gcc output.c ../src/backend/profiler_runtime.c -I../src/backend -o program
   ./program
@@ -35,11 +35,11 @@ A custom compiler that uses runtime profiling to identify frequently executed co
   ./program_opt
 
 
-===> (5.)View Profiling Data
+===> (5.)View Profiling Data : 
   cat profile.txt
   This file contains execution frequency of labels, used for feedback-driven optimizations.
 
-===> (6.)Rebuilding the Project if build issue
+===> (6.)Rebuilding the Project if build issue : 
   cd ~/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler
   rm -rf build
   mkdir build
@@ -47,7 +47,7 @@ A custom compiler that uses runtime profiling to identify frequently executed co
   cmake ..
   make
 
-===> (7.)All in one full comparison
+===> (7.)All in one full comparison : 
   cd /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build 
   && 
   rm -f profile.txt 
@@ -72,7 +72,7 @@ A custom compiler that uses runtime profiling to identify frequently executed co
   && 
   echo "=== Ready ==="
 
-===> (8.)Both Binaries Ready Final Result
+===> (8.)Both Binaries Ready Final Result : 
   cd /home/tas/CompilerDesign/FeedbackDrivenSelfOptimizingCompiler/build 
   && 
   echo "--- Unoptimized (22 IR instructions, no loop unrolling) ---" 
